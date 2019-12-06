@@ -26,6 +26,13 @@ void student::addGrade(double& x)
 
 double student::getScore()
 {
-    score = grade/assingments;
-    return score;
+    if(grade == 0)
+    {
+        return grade;
+    }
+    else
+    {
+        score = grade/assingments;
+        return score;
+    }
 }
